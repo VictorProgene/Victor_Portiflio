@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!--
+    
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Título da página -->
+    <title>Portfólio - Victor @VictorProgene</title>
+
+    <!-- Favicon do site -->
+    <link rel="shortcut icon" href="assets/imgs/Victor_profile.jpg" type="image/x-icon" />
+
+    <!-- Fontes Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bibliotecas de ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- CABEÇALHO / NAVEGAÇÃO -->
+    <header>
+      <div class="container nav-wrapper">
+        <h1 class="logo">Victor<span class="realce">DEV</span></h1>
+
+        <!-- Menu mobile com checkbox -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <nav class="navbar">
+          <a href="#sobre">Sobre</a>
+          <a href="#skills">Skills</a>
+          <a href="#projetos">Projetos</a>
+          <a href="https://github.com/VictorProgene">GitHub</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO - Sessão de boas-vindas com animação de texto -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-img">
+          <img
+            src="assets/imgs/Victor_profile.jpg"
+            alt="Foto de perfil"
+            class="profile-img"
+          />
+        </div>
+        <div class="hero-text">
+          <h2><span class="typed-text" id="typed"></span></h2>
+          <p>
+            Sou Victor, engenheiro desenvolvedor com experiência em automação e integração de sistemas.
+            Crio soluções eficientes utilizando Python, APIs e ferramentas como Selenium e n8n,
+            com foco em otimizar processos e gerar resultados reais.
+          </p>
+          <a href="#projetos" class="btn btn-primary">Ver meus projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="section">
+      <div class="container about-text">
+        <h2 class="section-title">Sobre mim</h2>
+        <p class="section-text">
+          Sou desenvolvedor com experiência em automação industrial e desenvolvimento de soluções
+          focadas em eficiência operacional. Trabalho integrando tecnologia e processos para
+          reduzir tarefas manuais e aumentar produtividade.
+        </p>
+
+        <p class="section-text">
+          Utilizo tecnologias como Python, Selenium, APIs e n8n para desenvolver automações,
+          integrações e sistemas que conectam diferentes ferramentas de forma inteligente.
+          Tenho facilidade em estruturar soluções completas, desde a coleta de dados até a
+          entrega final automatizada.
+        </p>
+
+        <p class="section-text">
+          Minha base em automação industrial me dá uma visão prática de sistemas críticos,
+          lógica de controle e resolução de problemas complexos, o que aplico diretamente
+          no desenvolvimento de software.
+        </p>
+
+        <p class="section-text">
+          Busco oportunidades em projetos internacionais, trabalhando de forma remota e
+          desenvolvendo soluções escaláveis que gerem valor real para empresas, com foco
+          em atuação global e remuneração em moeda forte.
+        </p>
+
+        <p class="section-text">
+          Entre os projetos que já desenvolvi estão automações de coleta de dados (web scraping),
+          integração com planilhas e bancos de dados, e criação de fluxos automatizados para
+          otimização de processos.
+        </p>
+      </div>
+    </section>
+
+    <!-- HABILIDADES / STACKS (Cards) -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <!-- Cada "skill-card" representa uma habilidade com ícone -->
+          <div class="skill-card">
+            <i class="devicon-html5-plain colored"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-css3-plain colored"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-python-plain colored"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-github-original"></i>
+            <span>GitHub</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-git-plain colored"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-selenium-plain colored"></i>
+            <span>Selenium</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="projetos-grid">
+          <!-- Cada projeto pode ter link para GitHub e Deploy -->
+          <!-- É só duplicar esse bloco e alterar os dados -->
+          <div class="projeto-card">
+            <img
+              src="assets/imgs/card-project-1.png"
+              alt="Print do projeto 1"
+            />
+            <h3>Previsão do Tempo</h3>
+            <p>
+              Aplicativo que exibe a previsão da semana. Desenvolvido com HTML,
+              CSS e JavaScript puro.
+            </p>
+            <div class="btns">
+              <a href="#">Ver projeto</a>
+              <a href="#">Ver código</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <img
+              src="assets/imgs/card-project-2.png"
+              alt="Print do projeto 2"
+            />
+            <h3>Blog Pessoal</h3>
+            <p>
+              Mockup responsivo criado como prática de estrutura HTML e
+              estilização com CSS.
+            </p>
+            <div class="btns">
+              <a href="#">Ver projeto</a>
+              <a href="#">Ver código</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <img
+              src="assets/imgs/card-project-3.png"
+              alt="Print do projeto 3"
+            />
+            <h3>Loja Online</h3>
+            <p>
+              Wireframe de loja virtual responsiva. Ideal para treinar grid,
+              responsividade e layout.
+            </p>
+            <div class="btns">
+              <a href="#">Ver projeto</a>
+              <a href="#">Ver código</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO GITHUB -->
+    <section id="github" class="section">
+      <div class="container">
+        <h2 class="section-title">Meus códigos no GitHub</h2>
+        <p class="section-subtitle">Tô começando minha jornada como dev e já estou praticando bastante! No meu GitHub você encontra exercícios, mini projetos e experiências enquanto aprendo e evoluo.</p>
+        <a href="https://github.com/VictorProgene" target="_blank" class="btn btn-primary">
+          <i class="devicon-github-original"></i> Ver meu GitHub
+        </a>
+      </div>
+    </section> 
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="container contato-card">
+        <h2>Contato</h2>
+        <p>Me chama no LinkedIn ou manda um e-mail 😊</p>
+        <div class="social-links">
+          <a href="https://github.com/VictorProgene" class="btn-social">
+            <i class="devicon-github-original"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/eng-jo%C3%A3o-victor-progene/" class="btn-social">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="mailto:victorprogene@gmail.com" class="btn-social">
+            <i class="fas fa-envelope"></i> E-mail
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+      <p>
+        Github
+        <a href="https://github.com/yasmngoncalves" target="_blank"
+          >@VictorProgene</a
+        >
+        • Seu próximo dev favorito! 🚀
+      </p>
+    </footer>
+
+    <!-- SCRIPT: Animação Hello World na Hero -->
+    <script>
+      const text = "Hello, I'm Victor!";
+      const typedEl = document.getElementById("typed");
+
+      let i = 0;
+      function digitar() {
+        if (i < text.length) {
+          typedEl.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(digitar, 120);
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", digitar);
+    </script>
+  </body>
+</html>
