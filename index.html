@@ -70,6 +70,23 @@
             I am Victor, a development engineer with experience in automation and systems integration. I build efficient solutions using Python, APIs, and tools like Selenium and n8n, focused on optimizing processes and delivering real results.
           </p>
           <a href="#projetos" class="btn btn-primary">View my projects</a>
+          <a href="abrirEDownloadCurriculo()" class="btn btn-primary" onclick="abrirEDownloadCurriculo(); return false;">View my CV</a>         
+
+            <script>
+            function abrirEDownloadCurriculo() {
+              const caminhoPDF = 'assets/files/CV_Victor.pdf'; // Caminho do seu arquivo PDF
+              
+              // Abre o PDF em uma nova aba
+              window.open(caminhoPDF, '_blank');
+              
+              // Inicia o download automaticamente
+              const link = document.createElement('a');
+              link.href = caminhoPDF;
+              link.download = 'assets/files/CV_Victor.pdf';
+              link.click();
+            }
+            </script>
+            
         </div>
       </div>
     </section>
